@@ -9,11 +9,18 @@ let car: {
  * @param car - the car to print
  */
 function printCar(car: {
-  make: string
-  model: string
-  year: number
+  make: string;
+  model: string;
+  year: number;
+  chargeVoltage?: number;
 }) {
-  console.log(`${car.make} ${car.model} (${car.year})`)
+  let str = `${car.make} ${car.model} ${car.year}`;
+  car.chargeVoltage;
+
+  if (typeof car.chargeVoltage !== 'undefined')
+    str += `// ${car.chargeVoltage}v`;
+
+  console.log(`${car.make} ${car.model} (${car.year})`);
 }
 
-printCar({make: 'test', model: 'test', year: 0})
+printCar({ make: 'Toyota', model: 'Corolla', year: 2002 });
