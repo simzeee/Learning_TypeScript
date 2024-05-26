@@ -120,3 +120,5 @@ babel.config.cjs
 
 config.json
 metadata.json
+yarn.lock
+.pnp*
