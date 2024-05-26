@@ -69,6 +69,7 @@ typings/
 
 # Yarn Integrity file
 .yarn-integrity
+.yarn
 
 # dotenv environment variables file
 .env
@@ -105,3 +106,17 @@ dist
 # TernJS port file
 .tern-port
 
+# Exercism
+HELP.md
+package.json
+jest.config.cjs
+tsconfig.json
+README.md
+babel.config.cjs
+.yarnrc.yml
+.eslintrc.cjs
+.eslintignore
+*.test.ts
+
+config.json
+metadata.json
